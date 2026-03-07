@@ -18,6 +18,7 @@ import Pointer from "../assets/footer-periscope.png"
 export default function AppFooter() {
     return (
         <footer>
+            {/*footer top*/}
             <section className="footer-top">
                 <div className="container">
                     <div>
@@ -42,7 +43,7 @@ export default function AppFooter() {
                     </div>
                 </div>
             </section>
-
+            {/*central footer*/}
             <section className="footer-middle">
                 <div className="container">
                     <div className="row py-4">
@@ -94,7 +95,8 @@ export default function AppFooter() {
                     <img src={LogoDC} alt="" />
                 </div>
             </section>
-
+            
+            {/*footer*/}
             <section className="bottom-footer">
                 <div className="container">
                     
