@@ -22,23 +22,23 @@ export default function AppFooter() {
             <section className="footer-top">
                 <div className="container">
                     <div className="merch"> 
-                        <img className="mobile" src={Mobile} alt="" />
+                        <img className="mobile" src={Mobile} alt="" title="DIGITAL COMICS" />
                         <span>DIGITAL COMICS</span>
                     </div>
                     <div className="merch">
-                        <img src={Merch} alt="" />
+                        <img src={Merch} alt="" title="DC MERCHANDISE"/>
                         <span>DC MERCHANDISE</span>
                     </div>
                     <div className="merch">
-                        <img src={Subs} alt="" />
+                        <img src={Subs} alt="" title="SUBSCRIPTIONS" />
                         <span>SUBSCRIPTIONS</span>
                     </div>
                     <div className="merch">
-                        <img className="pointer" src={Stores} alt="" />
+                        <img className="pointer" src={Stores} alt="" title="COMIC SHOP LOCATOR" />
                         <span>COMIC SHOP LOCATOR</span>
                     </div>
                     <div className="merch">
-                        <img src={Visa} alt="" />
+                        <img src={Visa} alt="" title="DC POWER VISA"/>
                         <span>DC POWER VISA</span>
                     </div>
                 </div>
