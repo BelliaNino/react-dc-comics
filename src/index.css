@@ -176,6 +176,15 @@ footer{
             transition: all 0.5s ease;
         }
 
+        @media (max-width: 767px) {
+                .title {
+                    font-size: 13px;
+                }
+                li{
+                    font-size: 8px;
+                }
+            }
+
         li:hover {
             color: white;
         }
