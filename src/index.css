@@ -7,52 +7,69 @@
 }
 
 :root {
-  --blu: #0282f9; 
-  --testo: #E8E9EA;
-  --grayfooter: #303030;
+    --blu: #0282f9;
+    --testo: #E8E9EA;
+    --grayfooter: #303030;
 
-  --fontype:font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --fontype: font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/*style header*/
+/*Navbar*/
 header {
+    width: 100%;
     height: 116px;
+    position: relative;
+    z-index: 3;
 
-    div {
+    .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        height: 100%;
         font-family: var(--fontype);
         font-weight: 700;
         font-size: 11px;
-        padding-top: 1rem;
+        padding-top: 0 1rem;
+    }
+
+    .navbar-toggler {
+        color: var(--blu);
+    }
+
+    .navbar-nav {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
 
         img {
             width: 85px;
+            cursor: pointer;
         }
 
-        nav {
+        a {
+            color: black;
+            text-decoration: none;
+            padding: 0 0.5rem;
+            transition: all 0.3s ease;
+        }
 
-
-            a {
-                color: black;
-                text-decoration: none;
-                padding: 3rem 0.5rem;
-                transition: all 0.3s ease;
-
-            }
-
+        @media (min-width: 991px) {
             a:hover {
+                padding: 3rem 0.5rem;
                 color: var(--blu);
                 border-bottom: solid var(--blu) 5px;
-
             }
+        }
 
+        @media (max-width: 991px) {
+            a:hover {
+                color: var(--blu);
+            }
         }
     }
 }
 
-/*main is empty*/
 main {
     background-color: black;
     height: 132px;
@@ -61,7 +78,7 @@ main {
 /*footer*/
 /*footer 1/3*/
 .footer-top {
-    background-color: rgb(61, 61, 240);
+    background-color: var(--blu);
     position: relative;
     z-index: 2;
 
@@ -73,23 +90,58 @@ main {
 
         img {
             width: 40px;
+            transition: all 0.3s ease;
         }
 
         .mobile {
             width: 35px;
+            transition: all 0.3s ease;
         }
 
         .pointer {
             width: 30px;
+            transition: all 0.3s ease;
         }
 
         span {
-            color: white;
+            color: rgba(255, 255, 255, 0.563);
             font-size: 11px;
             padding-left: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 991px) {
+            span {
+                display: none;
+            }
+        }
+
+        .merch {
+            cursor: pointer;
+        }
+
+        .merch:hover {
+
+            img {
+                width: 45px;
+            }
+
+            .mobile {
+                width: 40px;
+            }
+
+            .pointer {
+                width: 35px;
+            }
+
+            span {
+                color: white;
+                font-size: 13px;
+            }
         }
     }
 }
+
 /*footer 2/3*/
 .footer-middle {
     height: 370px;
@@ -105,31 +157,31 @@ main {
     ul {
         list-style-type: none;
 
-    
-    .title {
-        color: white;
-        position: relative;
-        z-index: 1;
-        font-size: 16px;
-        margin: 1rem 0;
-        font-family: var(--fontype);
-        font-weight: 600;
-    }
 
-    li{
-        color: gray;
-        position: relative;
-        z-index: 1;
-        font-size: 11px;
-        font-family: var(--fontype);
-        cursor: pointer;
-        transition: all 0.5s ease;
-    }
+        .title {
+            color: white;
+            position: relative;
+            z-index: 1;
+            font-size: 16px;
+            margin: 1rem 0;
+            font-family: var(--fontype);
+            font-weight: 600;
+        }
 
-    li:hover{
-        color: white;
+        li {
+            color: gray;
+            position: relative;
+            z-index: 1;
+            font-size: 11px;
+            font-family: var(--fontype);
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        li:hover {
+            color: white;
+        }
     }
-}
 }
 
 .footer-middle {
@@ -142,6 +194,7 @@ main {
 
     }
 }
+
 /*footer 3/3*/
 .bottom-footer {
     height: 110px;
@@ -151,34 +204,39 @@ main {
 
     .container {
         display: flex;
-        justify-content: space-between; 
-        align-items: center;            
-        height: 100%;    
-        
-        .btn{
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .btn {
             background-color: transparent;
             border: solid var(--blu) 2px;
             font-family: var(--fontype);
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            border: solid var(--blu) 2.5px;
         }
 
         .social {
             display: flex;
-            align-items: center;        
-            gap: 15px;                 
+            align-items: center;
+            gap: 15px;
 
             h3 {
-                color: var(--blu);            
-                margin: 0;  
-                padding-right: 15px;  
-                font-size: 20px;   
-                font-weight: 600;  
-                font-family: var(--fontype);     
+                color: var(--blu);
+                margin: 0;
+                padding-right: 15px;
+                font-size: 20px;
+                font-weight: 600;
+                font-family: var(--fontype);
             }
 
             img {
-                
-                display: block; 
-                width: 30px;            
+
+                display: block;
+                width: 30px;
                 cursor: pointer;
             }
 
