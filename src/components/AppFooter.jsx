@@ -170,7 +170,7 @@ export default function AppFooter() {
             <section className="footer-top">
                 <div className="container">
 
-
+                    {/*iterazione JSX per merchandise */}
                     {merchandise.map(merch => (
                         <div className="merch" key={merch}>
 

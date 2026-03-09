@@ -128,9 +128,10 @@ main {
             border: none;
             background-color: var(--blu);
             color: var(--testo);
-            padding: 0.3rem 1rem;
+            padding: 0.5rem 4rem;
             margin: 1rem;
             font-family: var(--fontype);
+            font-weight: 600;
 
         }
     }
