@@ -14,125 +14,150 @@ import YouTube from "../assets/footer-youtube.png"
 import Pinterst from "../assets/footer-pinterest.png"
 import Pointer from "../assets/footer-periscope.png"
 
+//Array merch
+const merchandise = [
+    {
+        icon: Mobile,
+        caption: "Digital Comics",
+        title: "Digital Comics",
+    },
+    {
+        icon: Merch,
+        caption: "DC Merchandise",
+        title: "DC Merchandise",
+    },
+    {
+        icon: Subs,
+        caption: "Subscriptions",
+        title: "Subscriptions",
+    },
+    {
+        icon: Stores,
+        caption: "Comic Shop Locator",
+        title: "Comic Shop Locator",
+    },
+    {
+        icon: Visa,
+        caption: "DC Power Visa",
+        title: "DC Power Visa",
+    },
+]
+
 //Array per i link nel footer
 const footerLinks = [
     {
-        id: 1,
         title: "DC Comics",
         voice: [
             {
-                id: 1,
-                link: "Characters"
+                link: "#",
+                nome: "Characters"
             },
             {
-                id: 2,
-                link: "Comics"
+                link: "#",
+                nome: "Comics"
             },
             {
-                id: 3,
-                link: "Movies"
+                link: "#",
+                nome: "Movies"
             },
             {
-                id: 4,
-                link: "TV"
+                link: "#",
+                nome: "TV"
             },
             {
-                id: 5,
-                link: "Videos"
+                link: "#",
+                nome: "Videos"
             },
             {
-                id: 6,
-                link: "News"
+                link: "#",
+                nome: "News"
             },
         ]
     },
     {
-        id: 2,
         title: "Shops",
         voice: [
             {
-                id: 1,
-                link: "Shop DC"
+                link: "#",
+                nome: "Shop DC"
             },
             {
-                id: 2,
-                link: "Shop DC Collectible"
+                link: "#",
+                nome: "Shop DC Collectible"
             },
         ]
     },
     {
-        id: 3,
         title: "DC",
         voice: [
             {
-                id: 1,
-                link: "Terms Of Use"
+                link: "#",
+                nome: "Terms Of Use"
             },
             {
-                id: 2,
-                link: "Privacy Policy (New)"
+                link: "#",
+                nome: "Privacy Policy (New)"
             },
             {
-                id: 3,
-                link: "Ad Choices"
+                link: "#",
+                nome: "Ad Choices"
             },
             {
-                id: 4,
-                link: "Advertising"
+                link: "#",
+                nome: "Advertising"
             },
             {
-                id: 5,
-                link: "Jobs"
+                link: "#",
+                nome: "Jobs"
             },
             {
-                id: 6,
-                link: "Subscriptions"
+                link: "#",
+                nome: "Subscriptions"
             },
             {
-                id: 7,
-                link: "Talent Workshops"
+                link: "#",
+                nome: "Talent Workshops"
             },
             {
-                id: 8,
-                link: "CPSC Certifications"
+                link: "#",
+                nome: "CPSC Certifications"
             },
             {
-                id: 9,
-                link: "Ratings"
+                link: "#",
+                nome: "Ratings"
             },
             {
-                id: 10,
-                link: "Shop Help"
+                link: "#",
+                nome: "Shop Help"
             },
             {
-                id: 11,
-                link: "Contact Us"
+                link: "#",
+                nome: "Contact Us"
             },
         ]
     },
     {
-        id: 4,
         title: "Sites",
         voice: [
             {
-                id: 1,
-                link: "DC"
+                link: "#",
+                nome: "DC"
             },
             {
-                id: 2,
-                link: "MAD Magazine"
+                link: "#",
+                nome: "MAD Magazine"
             },
             {
-                id: 3,
-                link: "DC Kids"
+                link: "#",
+                nome: "DC Kids"
             },
             {
-                id: 4,
-                link: "DC Univers"
+                link: "#",
+                nome: "DC Univers"
             },
             {
-                id: 5,
-                link: "DC Power Visa"
+                link: "#",
+                nome: "DC Power Visa"
             },
         ]
     },
@@ -144,26 +169,17 @@ export default function AppFooter() {
             {/*footer top*/}
             <section className="footer-top">
                 <div className="container">
-                    <div className="merch">
-                        <img className="mobile" src={Mobile} alt="" title="DIGITAL COMICS" />
-                        <span>DIGITAL COMICS</span>
-                    </div>
-                    <div className="merch">
-                        <img src={Merch} alt="" title="DC MERCHANDISE" />
-                        <span>DC MERCHANDISE</span>
-                    </div>
-                    <div className="merch">
-                        <img src={Subs} alt="" title="SUBSCRIPTIONS" />
-                        <span>SUBSCRIPTIONS</span>
-                    </div>
-                    <div className="merch">
-                        <img className="pointer" src={Stores} alt="" title="COMIC SHOP LOCATOR" />
-                        <span>COMIC SHOP LOCATOR</span>
-                    </div>
-                    <div className="merch">
-                        <img src={Visa} alt="" title="DC POWER VISA" />
-                        <span>DC POWER VISA</span>
-                    </div>
+
+
+                    {merchandise.map(merch => (
+                        <div className="merch" key={merch}>
+
+                            <img className="mobile" src={merch.icon} alt="" title={merch.title} />
+                            <span>{merch.caption.toUpperCase()}</span>
+
+                        </div>
+                    ))}
+
                 </div>
             </section>
             {/*central footer*/}
@@ -174,12 +190,12 @@ export default function AppFooter() {
                         {/*doppia iterazione con .map() */}
                         {footerLinks.map(footerLink => (
 
-                            <div className="col-2" key={footerLink.id}>
+                            <div className="col-2" key={footerLink}>
                                 <ul>
                                     <h3 className="title">{footerLink.title}</h3>
 
-                                    {footerLink.voice.map(links =>(
-                                    <li>{links.link}</li>
+                                    {footerLink.voice.map(links => (
+                                        <li>{links.nome}</li>
                                     ))}
                                 </ul>
                             </div>
