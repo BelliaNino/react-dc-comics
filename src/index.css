@@ -74,22 +74,31 @@ header {
 main {
     background-color: black;
 
-    .card {
-        margin: 2rem 0;
-        border: none;
-        border-radius: 0%;
-        background-color: transparent;
-
-        .card-img-top {
-        max-width: 185px;
-        max-height: 185px;
-        object-fit: cover;
+    .banner {
+        height: 400px;
+        background-image: url('./assets/jumbotron.jpg');
+        background-size: cover;
+        background-position: center top;
     }
 
-        .card-body {
+    .container {
+        .card {
+            margin: 2rem 0;
+            border: none;
+            border-radius: 0%;
+            background-color: transparent;
 
-            p {
-                font-size: 13px;
+            .card-img-top {
+                max-width: 185px;
+                max-height: 185px;
+                object-fit: cover;
+            }
+
+            .card-body {
+
+                p {
+                    font-size: 13px;
+                }
             }
         }
     }

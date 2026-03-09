@@ -1,3 +1,5 @@
+import Jumbotron from "../assets/jumbotron.jpg"
+
 const comics = [
     {
         id: 1,
@@ -157,6 +159,9 @@ const comics = [
 export default function AppMain() {
     return (
         <main>
+            <section className="banner mb-5">
+                
+            </section>
             <div className="container">
                 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6">
 
