@@ -129,8 +129,9 @@ main {
             background-color: var(--blu);
             color: var(--testo);
             padding: 0.3rem 1rem;
-            margin: 0.7rem;
+            margin: 1rem;
             font-family: var(--fontype);
+
         }
     }
 

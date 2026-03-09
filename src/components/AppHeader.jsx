@@ -23,7 +23,7 @@ const links = [
     },
     {
         id: 6,
-        title: "Collectipbles",
+        title: "Collectibles",
     },
     {
         id: 7,
@@ -58,13 +58,12 @@ export default function AppHeader() {
 
                             {links.map(link => (
 
-
                                 <li class="nav-item" key={link.id}>
                                     <a href="">{link.title.toUpperCase()}</a>
                                 </li>
 
                             ))}
-                            
+
                         </ul>
                     </div>
                 </div>
