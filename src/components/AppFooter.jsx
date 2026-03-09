@@ -15,6 +15,7 @@ import Pinterst from "../assets/footer-pinterest.png"
 import Pointer from "../assets/footer-periscope.png"
 
 
+
 export default function AppFooter() {
     return (
         <footer>
