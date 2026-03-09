@@ -8,7 +8,7 @@ import LogoDC from "../assets/dc-logo-bg.png"
 //img bg footer
 import BackGround from "../assets/footer-bg.jpg"
 //img social footer
-import Facebook from "../assets/footer-Facebook.png"
+import Facebook from "../assets/footer-facebook.png"
 import X from "../assets/footer-twitter.png"
 import YouTube from "../assets/footer-youtube.png"
 import Pinterst from "../assets/footer-pinterest.png"
