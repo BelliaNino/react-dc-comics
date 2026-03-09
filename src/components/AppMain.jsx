@@ -172,7 +172,7 @@ export default function AppMain() {
                         <div className="col " key={game.id}>
                             <div className="card my-3">
                                 <img className="card-img-top rounded-0" src={game.thumb} alt="" />
-                                <div className="card-body p-0 text-white text-start">
+                                <div className="card-body p-0 text-start">
                                     <p className="pt-3">{game.series.toUpperCase()}</p>
                                 </div>
                             </div>
@@ -180,6 +180,7 @@ export default function AppMain() {
                     ))
                     }
                 </div>
+                <button>LOAD MORE</button>
             </div>
         </main>
     )

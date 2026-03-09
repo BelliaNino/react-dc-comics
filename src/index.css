@@ -74,6 +74,7 @@ header {
 main {
     background-color: black;
 
+    /*jumbotrone and flag*/
     .banner {
         height: 400px;
         background-image: url('./assets/jumbotron.jpg');
@@ -82,10 +83,10 @@ main {
 
         position: relative;
 
-        span{
+        span {
             background-color: var(--blu);
             font-family: var(--fontype);
-            color: #E8E9EA;
+            color: var(--testo);
             font-weight: 600;
             padding: 0.7rem;
             position: absolute;
@@ -93,7 +94,12 @@ main {
         }
     }
 
+    /*cards*/
     .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
         .card {
             margin: 2rem 0;
             border: none;
@@ -111,8 +117,19 @@ main {
                 p {
                     font-size: 13px;
                     font-family: var(--fontype);
+                    color: var(--testo);
                 }
             }
+        }
+
+        /*button to reload*/
+        button {
+            border: none;
+            background-color: var(--blu);
+            color: var(--testo);
+            padding: 0.3rem 1rem;
+            margin: 0.7rem;
+            font-family: var(--fontype);
         }
     }
 
