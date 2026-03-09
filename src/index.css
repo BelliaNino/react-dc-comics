@@ -79,6 +79,18 @@ main {
         background-image: url('./assets/jumbotron.jpg');
         background-size: cover;
         background-position: center top;
+
+        position: relative;
+
+        span{
+            background-color: var(--blu);
+            font-family: var(--fontype);
+            color: #E8E9EA;
+            font-weight: 600;
+            padding: 0.7rem;
+            position: absolute;
+            bottom: -7%;
+        }
     }
 
     .container {
@@ -98,6 +110,7 @@ main {
 
                 p {
                     font-size: 13px;
+                    font-family: var(--fontype);
                 }
             }
         }

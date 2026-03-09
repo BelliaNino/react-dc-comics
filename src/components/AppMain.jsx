@@ -160,7 +160,9 @@ export default function AppMain() {
     return (
         <main>
             <section className="banner mb-5">
-                
+                <div className="container">
+                <span>CURRENT SERIES</span>
+                </div>
             </section>
             <div className="container">
                 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6">
