@@ -43,7 +43,7 @@ const merchandise = [
     },
 ]
 
-//Array per i link nel footer
+//Array link footer
 const footerLinks = [
     {
         title: "DC Comics",
@@ -170,7 +170,7 @@ export default function AppFooter() {
             <section className="footer-top">
                 <div className="container">
 
-                    {/*iterazione JSX per merchandise */}
+                    {/*iterazione JSX merchandise */}
                     {merchandise.map(merch => (
                         <div className="merch" key={merch}>
 
