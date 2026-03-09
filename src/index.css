@@ -95,6 +95,7 @@ main {
     }
 
     /*cards*/
+    .games{
     .container {
         display: flex;
         align-items: center;
@@ -133,8 +134,7 @@ main {
         }
     }
 
-
-}
+}}
 
 /*footer*/
 /*footer 1/3*/

@@ -164,6 +164,7 @@ export default function AppMain() {
                 <span>CURRENT SERIES</span>
                 </div>
             </section>
+            <section className="games">
             <div className="container">
                 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6">
 
@@ -182,6 +183,7 @@ export default function AppMain() {
                 </div>
                 <button>LOAD MORE</button>
             </div>
+            </section>
         </main>
     )
 }
