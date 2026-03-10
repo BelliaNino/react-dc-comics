@@ -1,16 +1,9 @@
 //img footer
 import LogoDC from "../assets/dc-logo-bg.png"
-//img bg footer
-import BackGround from "../assets/footer-bg.jpg"
-//img social footer
-import Facebook from "../assets/footer-facebook.png"
-import X from "../assets/footer-twitter.png"
-import YouTube from "../assets/footer-youtube.png"
-import Pinterst from "../assets/footer-pinterest.png"
-import Pointer from "../assets/footer-periscope.png"
 
 
-export default function AppFooter({merchandise, footerLinks}) {
+
+export default function AppFooter({merchandise, footerLinks, SN}) {
     return (
         <footer>
             {/*footer top*/}
@@ -65,14 +58,13 @@ export default function AppFooter({merchandise, footerLinks}) {
                         <button type="button" className="btn btn-primary rounded-0">SIGN-UP NOW!</button>
                     </div>
 
-
                     <div className="social">
                         <h3>FOLLOW US</h3>
-                        <img src={Facebook} alt="FB" />
-                        <img src={X} alt="X" />
-                        <img src={YouTube} alt="YT" />
-                        <img src={Pinterst} alt="P" />
-                        <img src={Pointer} alt="Loc" />
+
+                        {/*iterazione social icon*/}
+                        {SN.map(social => (
+                        <img key={social.image} src={social.image} alt="FB" />
+                        ))}
                     </div>
                 </div>
             </section>

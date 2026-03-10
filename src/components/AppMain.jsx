@@ -1,4 +1,3 @@
-import Jumbotron from "../assets/jumbotron.jpg"
 import AppCard from "./AppCard";
 
 

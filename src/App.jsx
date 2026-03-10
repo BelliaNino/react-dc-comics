@@ -8,6 +8,13 @@ import Merch from "./assets/buy-comics-merchandise.png"
 import Subs from "./assets/buy-comics-subscriptions.png"
 import Stores from "./assets/buy-comics-shop-locator.png"
 import Visa from "./assets/buy-dc-power-visa.svg"
+//footer social
+//img social footer
+import Facebook from "./assets/footer-facebook.png"
+import X from "./assets/footer-twitter.png"
+import YouTube from "./assets/footer-youtube.png"
+import Pinterst from "./assets/footer-pinterest.png"
+import Pointer from "./assets/footer-periscope.png"
 
 //AppHeader
 const links = [
@@ -209,6 +216,7 @@ const comics = [
 ];
 
 //AppFooter
+//merch
 const merchandise = [
     {
         icon: Mobile,
@@ -236,7 +244,7 @@ const merchandise = [
         title: "DC Power Visa",
     },
 ]
-
+//link footer
 const footerLinks = [
     {
         title: "DC Comics",
@@ -355,6 +363,30 @@ const footerLinks = [
         ]
     },
 ]
+//Social
+const SN = [
+    {
+        link: "#",
+        image: Facebook,
+    },
+    {
+        link: "#",
+        image: X,
+    },
+    {
+        link: "#",
+        image: YouTube,
+    },
+    {
+        link: "#",
+        image: Pinterst,
+    },
+    {
+        link: "#",
+        image: Pointer,
+    },
+]
+
 
 function App() {
   
@@ -363,7 +395,7 @@ function App() {
     <>
       <AppHeader links={links}/>
       <AppMain comics={comics}/>
-      <AppFooter merch={merchandise} info={footerLinks}/>
+      <AppFooter merchandise={merchandise} footerLinks={footerLinks} SN={SN}/>
     </> 
   )
 }

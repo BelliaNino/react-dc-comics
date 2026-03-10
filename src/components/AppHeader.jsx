@@ -1,48 +1,5 @@
 import Logo from "../assets/dc-logo.png"
 
-const links = [
-    {
-        link: "#",
-        title: "Characters",
-    },
-    {
-        link: "#",
-        title: "Comics",
-    },
-    {
-        link: "#",
-        title: "Movies",
-    },
-    {
-        link: "#",
-        title: "TV",
-    },
-    {
-        link: "#",
-        title: "Games",
-    },
-    {
-        link: "#",
-        title: "Collectibles",
-    },
-    {
-        link: "#",
-        title: "Videos",
-    },
-    {
-        link: "#",
-        title: "Fans",
-    },
-    {
-        link: "#",
-        title: "News",
-    },
-    {
-        link: "#",
-        title: "Shop",
-    },
-]
-
 export default function AppHeader({links}) {
     return (
         <header>
