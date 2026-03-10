@@ -2,63 +2,63 @@ import Logo from "../assets/dc-logo.png"
 
 const links = [
     {
-        id: 1,
+        link: "#",
         title: "Characters",
     },
     {
-        id: 2,
+        link: "#",
         title: "Comics",
     },
     {
-        id: 3,
+        link: "#",
         title: "Movies",
     },
     {
-        id: 4,
+        link: "#",
         title: "TV",
     },
     {
-        id: 5,
+        link: "#",
         title: "Games",
     },
     {
-        id: 6,
+        link: "#",
         title: "Collectibles",
     },
     {
-        id: 7,
+        link: "#",
         title: "Videos",
     },
     {
-        id: 8,
+        link: "#",
         title: "Fans",
     },
     {
-        id: 9,
+        link: "#",
         title: "News",
     },
     {
-        id: 10,
+        link: "#",
         title: "Shop",
     },
 ]
 
-export default function AppHeader() {
+export default function AppHeader({links}) {
     return (
         <header>
 
-            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-                <div class="container">
+            <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+                <div className="container">
                     <img src={Logo} alt="" />
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <div className="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
+                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
 
                             {links.map(link => (
 
-                                <li class="nav-item" key={link.id}>
+                                <li className="nav-item" key={link.title}>
                                     <a href="">{link.title.toUpperCase()}</a>
                                 </li>
 
