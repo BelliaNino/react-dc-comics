@@ -13,7 +13,7 @@ export default function AppMain({comics}) {
 
             <section className="games">
                 <div className="container">
-                    <div className="row ">
+                    <div className="row">
 
                         {/*Porps */}
                         {comics.map(game => (
